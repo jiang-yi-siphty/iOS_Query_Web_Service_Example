@@ -24,6 +24,9 @@
 		499A81FC182CDCEB009A9ED5 /* ExpertSystemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 499A81FB182CDCEB009A9ED5 /* ExpertSystemTests.m */; };
 		499A8207182CE552009A9ED5 /* ESEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 499A8206182CE552009A9ED5 /* ESEngine.m */; };
 		499A820A182CE652009A9ED5 /* ESGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 499A8209182CE652009A9ED5 /* ESGlobal.m */; };
+		499A820E182CF8A2009A9ED5 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 499A820D182CF8A2009A9ED5 /* MBProgressHUD.m */; };
+		499A8210182CF8F0009A9ED5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499A820F182CF8F0009A9ED5 /* AudioToolbox.framework */; };
+		499A8212182CF8FA009A9ED5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499A8211182CF8FA009A9ED5 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,10 @@
 		499A8206182CE552009A9ED5 /* ESEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ESEngine.m; path = ExpertSystem/ESEngine.m; sourceTree = "<group>"; };
 		499A8208182CE652009A9ED5 /* ESGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESGlobal.h; sourceTree = "<group>"; };
 		499A8209182CE652009A9ED5 /* ESGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESGlobal.m; sourceTree = "<group>"; };
+		499A820C182CF8A2009A9ED5 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = ThirdPartyTools/MBProgressHUD.h; sourceTree = "<group>"; };
+		499A820D182CF8A2009A9ED5 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = ThirdPartyTools/MBProgressHUD.m; sourceTree = "<group>"; };
+		499A820F182CF8F0009A9ED5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		499A8211182CF8FA009A9ED5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +77,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				499A81CD182CDCEB009A9ED5 /* CoreGraphics.framework in Frameworks */,
+				499A8212182CF8FA009A9ED5 /* QuartzCore.framework in Frameworks */,
+				499A8210182CF8F0009A9ED5 /* AudioToolbox.framework in Frameworks */,
 				499A81CF182CDCEB009A9ED5 /* UIKit.framework in Frameworks */,
 				499A81CB182CDCEB009A9ED5 /* Foundation.framework in Frameworks */,
 			);
@@ -114,6 +123,8 @@
 		499A81C9182CDCEB009A9ED5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				499A8211182CF8FA009A9ED5 /* QuartzCore.framework */,
+				499A820F182CF8F0009A9ED5 /* AudioToolbox.framework */,
 				499A81CA182CDCEB009A9ED5 /* Foundation.framework */,
 				499A81CC182CDCEB009A9ED5 /* CoreGraphics.framework */,
 				499A81CE182CDCEB009A9ED5 /* UIKit.framework */,
@@ -125,6 +136,7 @@
 		499A81D0182CDCEB009A9ED5 /* ExpertSystem */ = {
 			isa = PBXGroup;
 			children = (
+				499A820B182CF84F009A9ED5 /* ThirdPartyTools */,
 				499A81D9182CDCEB009A9ED5 /* ESAppDelegate.h */,
 				499A81DA182CDCEB009A9ED5 /* ESAppDelegate.m */,
 				499A81DC182CDCEB009A9ED5 /* Main_iPhone.storyboard */,
@@ -165,6 +177,15 @@
 				499A81F8182CDCEB009A9ED5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		499A820B182CF84F009A9ED5 /* ThirdPartyTools */ = {
+			isa = PBXGroup;
+			children = (
+				499A820C182CF8A2009A9ED5 /* MBProgressHUD.h */,
+				499A820D182CF8A2009A9ED5 /* MBProgressHUD.m */,
+			);
+			name = ThirdPartyTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +292,7 @@
 				499A81DB182CDCEB009A9ED5 /* ESAppDelegate.m in Sources */,
 				499A81D7182CDCEB009A9ED5 /* main.m in Sources */,
 				499A8207182CE552009A9ED5 /* ESEngine.m in Sources */,
+				499A820E182CF8A2009A9ED5 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

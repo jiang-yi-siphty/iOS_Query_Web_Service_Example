@@ -13,12 +13,12 @@
 ESGlobal *esGlobalObj;
 - (id)init{
     self = [super init];
-    esGlobalObj=[ESGlobal getInstance];
     return self;
 }
 
 - (NSError *)requestScenarios
 {
+    esGlobalObj=[ESGlobal getInstance];
     NSError *error = nil;
     /*******************************************
      *Send Senarios Request
@@ -67,6 +67,7 @@ ESGlobal *esGlobalObj;
 
 - (NSError *)requestCase:(NSString *)caseId
 {
+    esGlobalObj=[ESGlobal getInstance];
     NSError *error = nil;
     /*******************************************
      *Send Senarios Request

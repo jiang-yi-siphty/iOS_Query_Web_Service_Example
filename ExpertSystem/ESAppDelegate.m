@@ -22,8 +22,8 @@
     //Initilze Global Variables
     ESGlobal *esGlobalObj=[ESGlobal getInstance];
     esGlobalObj.webServiceUrl = @"http://expert-system.internal.shinyshark.com/";
-    esGlobalObj.scenariosEndpoints = @"scenarios/";
-    esGlobalObj.webServiceUrl = @"cases/";
+    esGlobalObj.scenariosEndpoint = @"scenarios/";
+    esGlobalObj.casesEndpoint = @"cases/";
     
     return YES;
 }

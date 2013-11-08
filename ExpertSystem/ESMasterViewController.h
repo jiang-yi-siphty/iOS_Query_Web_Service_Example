@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import "ESGlobal.h"
+#import "ESEngine.h"
+#import "MBProgressHUD.h"
 
 @class ESDetailViewController;
 
-@interface ESMasterViewController : UITableViewController
+@interface ESMasterViewController : UITableViewController<UITableViewDelegate,MBProgressHUDDelegate>
 
 @property (strong, nonatomic) ESDetailViewController *detailViewController;
+- (IBAction)refreshButtonSelected:(id)sender;
 
 @end
