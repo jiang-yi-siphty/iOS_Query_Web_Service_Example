@@ -26,7 +26,11 @@
 @property (weak, nonatomic) IBOutlet UIImageView *caseImageView;
 @property (weak, nonatomic) IBOutlet UIButton *case1stButton;
 @property (weak, nonatomic) IBOutlet UIButton *case2ndButton;
+@property (weak, nonatomic) IBOutlet UIButton *caseFinalButton;
 
+- (IBAction)button1TouchUpInside:(id)sender;
+- (IBAction)button2TouchUpInside:(id)sender;
+- (IBAction)scenariosButtonSelected:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end

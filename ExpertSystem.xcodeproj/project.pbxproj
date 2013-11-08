@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		495CEC13182D3075002C0EAE /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 495CEC12182D3075002C0EAE /* images.jpeg */; };
 		499A81CB182CDCEB009A9ED5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499A81CA182CDCEB009A9ED5 /* Foundation.framework */; };
 		499A81CD182CDCEB009A9ED5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499A81CC182CDCEB009A9ED5 /* CoreGraphics.framework */; };
 		499A81CF182CDCEB009A9ED5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499A81CE182CDCEB009A9ED5 /* UIKit.framework */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		495CEC12182D3075002C0EAE /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
 		499A81C7182CDCEB009A9ED5 /* ExpertSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpertSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		499A81CA182CDCEB009A9ED5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		499A81CC182CDCEB009A9ED5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -97,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		495CEC14182D307A002C0EAE /* Artworks */ = {
+			isa = PBXGroup;
+			children = (
+				495CEC12182D3075002C0EAE /* images.jpeg */,
+			);
+			name = Artworks;
+			sourceTree = "<group>";
+		};
 		499A81BE182CDCEB009A9ED5 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +146,7 @@
 		499A81D0182CDCEB009A9ED5 /* ExpertSystem */ = {
 			isa = PBXGroup;
 			children = (
+				495CEC14182D307A002C0EAE /* Artworks */,
 				499A820B182CF84F009A9ED5 /* ThirdPartyTools */,
 				499A81D9182CDCEB009A9ED5 /* ESAppDelegate.h */,
 				499A81DA182CDCEB009A9ED5 /* ESAppDelegate.m */,
@@ -266,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				499A81E9182CDCEB009A9ED5 /* Images.xcassets in Resources */,
+				495CEC13182D3075002C0EAE /* images.jpeg in Resources */,
 				499A81DE182CDCEB009A9ED5 /* Main_iPhone.storyboard in Resources */,
 				499A81D5182CDCEB009A9ED5 /* InfoPlist.strings in Resources */,
 			);
@@ -505,6 +517,7 @@
 				499A8201182CDCEB009A9ED5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		499A8202182CDCEB009A9ED5 /* Build configuration list for PBXNativeTarget "ExpertSystemTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +526,7 @@
 				499A8204182CDCEB009A9ED5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
