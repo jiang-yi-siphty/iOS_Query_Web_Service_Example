@@ -40,27 +40,27 @@ NSOperationQueue *_secondQueue;
             NSLog(@"Retrieving Case successful.");
             NSLog(@"Global Scenarios Array: %@",[esGlobalObj.caseDictionary description]);
             caseDictionary = esGlobalObj.caseDictionary;
-            if ([esGlobalObj.caseDictionary objectForKey:@"answers"]) {
+            if ([caseDictionary objectForKey:@"answers"]) {
                 case1stButton.hidden = NO;
                 case2ndButton.hidden = NO;
                 NSString *buttonText;
-                buttonText = [[esGlobalObj.caseDictionary objectForKey:@"answers"][0] objectForKey:@"text"];
+                buttonText = [[caseDictionary objectForKey:@"answers"][0] objectForKey:@"text"];
                 [case1stButton setTitle:buttonText forState:UIControlStateNormal];
                 case1stButton.tag = [[[esGlobalObj.caseDictionary objectForKey:@"answers"][0] objectForKey:@"caseId"] integerValue];
                 
-                buttonText = [[esGlobalObj.caseDictionary objectForKey:@"answers"][1] objectForKey:@"text"];
+                buttonText = [[caseDictionary objectForKey:@"answers"][1] objectForKey:@"text"];
                 [case2ndButton setTitle:buttonText forState:UIControlStateNormal];
-                case2ndButton.tag = [[[esGlobalObj.caseDictionary objectForKey:@"answers"][1] objectForKey:@"caseId"] integerValue];
+                case2ndButton.tag = [[[caseDictionary objectForKey:@"answers"][1] objectForKey:@"caseId"] integerValue];
             } else {
                 case1stButton.hidden = YES;
                 case2ndButton.hidden = YES;
             }
-            caseTextView.text = [NSString stringWithFormat:@"\n\n\n%@",[esGlobalObj.caseDictionary objectForKey:@"text"]];
+            caseTextView.text = [NSString stringWithFormat:@"\n\n\n%@",[caseDictionary objectForKey:@"text"]];
             
                 [_secondQueue addOperationWithBlock:^{
                     UIImage *image;
                     @try {
-                        image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[esGlobalObj.caseDictionary objectForKey:@"image"]]]];
+                        image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[caseDictionary objectForKey:@"image"]]]];
                     }
                     @catch (NSException *exception) {
                         image = [UIImage imageNamed: @"images.jpeg"];
