@@ -18,7 +18,6 @@
 @synthesize caseDictionary;
 @synthesize case1stButton;
 @synthesize case2ndButton;
-@synthesize caseFinalButton;
 @synthesize caseImageView;
 @synthesize caseTextView;
 ESGlobal *esGlobalObj;
@@ -44,7 +43,6 @@ NSOperationQueue *_secondQueue;
             if ([esGlobalObj.caseDictionary objectForKey:@"answers"]) {
                 case1stButton.hidden = NO;
                 case2ndButton.hidden = NO;
-                caseFinalButton.hidden = YES;
                 NSString *buttonText;
                 buttonText = [[esGlobalObj.caseDictionary objectForKey:@"answers"][0] objectForKey:@"text"];
                 [case1stButton setTitle:buttonText forState:UIControlStateNormal];
@@ -56,7 +54,6 @@ NSOperationQueue *_secondQueue;
             } else {
                 case1stButton.hidden = YES;
                 case2ndButton.hidden = YES;
-                caseFinalButton.hidden = NO;
             }
             caseTextView.text = [NSString stringWithFormat:@"\n\n\n%@",[esGlobalObj.caseDictionary objectForKey:@"text"]];
             
@@ -93,7 +90,8 @@ NSOperationQueue *_secondQueue;
 }
 - (void)viewDidAppear:(BOOL)animated
 {
-    [super viewDidAppear:YES];}
+    [super viewDidAppear:YES];
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -101,18 +99,10 @@ NSOperationQueue *_secondQueue;
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)button1TouchUpInside:(id)sender {
-    NSLog(@"Button 1 Tag: %d", case1stButton.tag);
-    [self performSegueWithIdentifier: @"button1" sender: self];
-}
 
-- (IBAction)button2TouchUpInside:(id)sender {
-    NSLog(@"Button 2 Tag: %d", case2ndButton.tag);
-    [self performSegueWithIdentifier: @"button2" sender: self];
-}
 
 - (IBAction)scenariosButtonSelected:(id)sender {
-    [self.navigationController popToRootViewControllerAnimated:NO];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
