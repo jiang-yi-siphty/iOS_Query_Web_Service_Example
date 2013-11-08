@@ -195,13 +195,16 @@ ESEngine *engine;
     
     if([segue.identifier isEqualToString:@"showCaseByTapCell"])
     {
-        ESDetailViewController *caseViewController = segue.destinationViewController;
+//        ESDetailViewController *caseViewController = segue.destinationViewController;
         //Pre-configure Case View varibles
         //Need Code here!
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+        NSString *caseIdString = [esGlobalObj.scenariosArray[indexPath.row] objectForKey:@"caseId"];
+        
+        NSLog(@"Case ID: %@",caseIdString);
+
+        [[segue destinationViewController] setCaseId:caseIdString];
         
     }
 }
