@@ -14,7 +14,6 @@
 		499A81D7182CDCEB009A9ED5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 499A81D6182CDCEB009A9ED5 /* main.m */; };
 		499A81DB182CDCEB009A9ED5 /* ESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 499A81DA182CDCEB009A9ED5 /* ESAppDelegate.m */; };
 		499A81DE182CDCEB009A9ED5 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499A81DC182CDCEB009A9ED5 /* Main_iPhone.storyboard */; };
-		499A81E1182CDCEB009A9ED5 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499A81DF182CDCEB009A9ED5 /* Main_iPad.storyboard */; };
 		499A81E4182CDCEB009A9ED5 /* ESMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499A81E3182CDCEB009A9ED5 /* ESMasterViewController.m */; };
 		499A81E7182CDCEB009A9ED5 /* ESDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499A81E6182CDCEB009A9ED5 /* ESDetailViewController.m */; };
 		499A81E9182CDCEB009A9ED5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 499A81E8182CDCEB009A9ED5 /* Images.xcassets */; };
@@ -47,7 +46,6 @@
 		499A81D9182CDCEB009A9ED5 /* ESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESAppDelegate.h; sourceTree = "<group>"; };
 		499A81DA182CDCEB009A9ED5 /* ESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESAppDelegate.m; sourceTree = "<group>"; };
 		499A81DD182CDCEB009A9ED5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		499A81E0182CDCEB009A9ED5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		499A81E2182CDCEB009A9ED5 /* ESMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESMasterViewController.h; sourceTree = "<group>"; };
 		499A81E3182CDCEB009A9ED5 /* ESMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESMasterViewController.m; sourceTree = "<group>"; };
 		499A81E5182CDCEB009A9ED5 /* ESDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESDetailViewController.h; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 				499A81D9182CDCEB009A9ED5 /* ESAppDelegate.h */,
 				499A81DA182CDCEB009A9ED5 /* ESAppDelegate.m */,
 				499A81DC182CDCEB009A9ED5 /* Main_iPhone.storyboard */,
-				499A81DF182CDCEB009A9ED5 /* Main_iPad.storyboard */,
 				499A81E2182CDCEB009A9ED5 /* ESMasterViewController.h */,
 				499A81E3182CDCEB009A9ED5 /* ESMasterViewController.m */,
 				499A81E5182CDCEB009A9ED5 /* ESDetailViewController.h */,
@@ -237,7 +234,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				499A81E1182CDCEB009A9ED5 /* Main_iPad.storyboard in Resources */,
 				499A81E9182CDCEB009A9ED5 /* Images.xcassets in Resources */,
 				499A81DE182CDCEB009A9ED5 /* Main_iPhone.storyboard in Resources */,
 				499A81D5182CDCEB009A9ED5 /* InfoPlist.strings in Resources */,
@@ -299,14 +295,6 @@
 				499A81DD182CDCEB009A9ED5 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		499A81DF182CDCEB009A9ED5 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				499A81E0182CDCEB009A9ED5 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		499A81F8182CDCEB009A9ED5 /* InfoPlist.strings */ = {
@@ -403,6 +391,7 @@
 				GCC_PREFIX_HEADER = "ExpertSystem/ExpertSystem-Prefix.pch";
 				INFOPLIST_FILE = "ExpertSystem/ExpertSystem-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -416,6 +405,7 @@
 				GCC_PREFIX_HEADER = "ExpertSystem/ExpertSystem-Prefix.pch";
 				INFOPLIST_FILE = "ExpertSystem/ExpertSystem-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
