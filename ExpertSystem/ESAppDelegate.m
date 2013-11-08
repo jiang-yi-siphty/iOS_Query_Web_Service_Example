@@ -7,7 +7,7 @@
 //
 
 #import "ESAppDelegate.h"
-
+#import "ESGlobal.h"
 @implementation ESAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -18,6 +18,13 @@
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
         splitViewController.delegate = (id)navigationController.topViewController;
     }
+    
+    //Initilze Global Variables
+    ESGlobal *esGlobalObj=[ESGlobal getInstance];
+    esGlobalObj.webServiceUrl = @"http://expert-system.internal.shinyshark.com/";
+    esGlobalObj.scenariosEndpoints = @"scenarios/";
+    esGlobalObj.webServiceUrl = @"cases/";
+    
     return YES;
 }
 							

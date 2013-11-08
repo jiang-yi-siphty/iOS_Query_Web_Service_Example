@@ -22,6 +22,8 @@
 		499A81F2182CDCEB009A9ED5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499A81CE182CDCEB009A9ED5 /* UIKit.framework */; };
 		499A81FA182CDCEB009A9ED5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 499A81F8182CDCEB009A9ED5 /* InfoPlist.strings */; };
 		499A81FC182CDCEB009A9ED5 /* ExpertSystemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 499A81FB182CDCEB009A9ED5 /* ExpertSystemTests.m */; };
+		499A8207182CE552009A9ED5 /* ESEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 499A8206182CE552009A9ED5 /* ESEngine.m */; };
+		499A820A182CE652009A9ED5 /* ESGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 499A8209182CE652009A9ED5 /* ESGlobal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		499A81F7182CDCEB009A9ED5 /* ExpertSystemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExpertSystemTests-Info.plist"; sourceTree = "<group>"; };
 		499A81F9182CDCEB009A9ED5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		499A81FB182CDCEB009A9ED5 /* ExpertSystemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpertSystemTests.m; sourceTree = "<group>"; };
+		499A8205182CE552009A9ED5 /* ESEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESEngine.h; path = ExpertSystem/ESEngine.h; sourceTree = "<group>"; };
+		499A8206182CE552009A9ED5 /* ESEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ESEngine.m; path = ExpertSystem/ESEngine.m; sourceTree = "<group>"; };
+		499A8208182CE652009A9ED5 /* ESGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESGlobal.h; sourceTree = "<group>"; };
+		499A8209182CE652009A9ED5 /* ESGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESGlobal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,10 @@
 		499A81BE182CDCEB009A9ED5 = {
 			isa = PBXGroup;
 			children = (
+				499A8208182CE652009A9ED5 /* ESGlobal.h */,
+				499A8209182CE652009A9ED5 /* ESGlobal.m */,
+				499A8205182CE552009A9ED5 /* ESEngine.h */,
+				499A8206182CE552009A9ED5 /* ESEngine.m */,
 				499A81D0182CDCEB009A9ED5 /* ExpertSystem */,
 				499A81F5182CDCEB009A9ED5 /* ExpertSystemTests */,
 				499A81C9182CDCEB009A9ED5 /* Frameworks */,
@@ -257,8 +267,10 @@
 			files = (
 				499A81E4182CDCEB009A9ED5 /* ESMasterViewController.m in Sources */,
 				499A81E7182CDCEB009A9ED5 /* ESDetailViewController.m in Sources */,
+				499A820A182CE652009A9ED5 /* ESGlobal.m in Sources */,
 				499A81DB182CDCEB009A9ED5 /* ESAppDelegate.m in Sources */,
 				499A81D7182CDCEB009A9ED5 /* main.m in Sources */,
+				499A8207182CE552009A9ED5 /* ESEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
